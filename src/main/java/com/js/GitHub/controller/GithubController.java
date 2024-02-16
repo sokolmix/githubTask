@@ -17,7 +17,10 @@ import java.util.List;
 public class GithubController {
     private final GithubService githubService;
 
-    @GetMapping(value = "/{username}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(
+            value = "/{username}",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
     public List<RepositoryResponse> getUserRepositories(@PathVariable String username) {
         return githubService.getUserRepositories(username);
     }

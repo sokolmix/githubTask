@@ -2,10 +2,11 @@ package com.js.GitHub.config;
 
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
 
-@org.springframework.context.annotation.Configuration
-public class Configuration {
+@Configuration
+public class Config {
     private static final String BASE_URL = "https://api.github.com";
 
     @Bean

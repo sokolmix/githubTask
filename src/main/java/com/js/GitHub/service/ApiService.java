@@ -32,7 +32,7 @@ public class ApiService {
                         .filter(e -> !e.isFork())
                         .collect(Collectors.toList());
 
-        log.info("Found {} not forks repositories for {}", notForkGitRepository.size(), username);
+        log.info("Found {} not fork repositories for {}", notForkGitRepository.size(), username);
 
         return getResponse(notForkGitRepository);
     }
