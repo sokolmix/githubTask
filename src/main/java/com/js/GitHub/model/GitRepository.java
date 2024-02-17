@@ -14,6 +14,4 @@ public class GitRepository {
     private Owner owner;
     private boolean fork;
 
-
-
 }
