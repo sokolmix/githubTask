@@ -35,7 +35,7 @@ class GitHubApplicationTests {
 
 
     @Test
-    void getUserRepositoriesTest() throws Exception {
+    void getUserRepositoriesTest() {
         List<GitRepository> gitRepositoryList = prepareGitRepositoryList();
         when(apiServiceMock.callGitRepositories(USER)).thenReturn(gitRepositoryList);
         when(apiServiceMock.callBranchesApi(gitRepositoryList.get(0))).thenReturn(prepareBranchListForTestRepository());
